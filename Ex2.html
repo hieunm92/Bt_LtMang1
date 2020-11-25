@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array();
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        let x = Math.floor(Math.random() * 100);
+        arr.push(x);
+    }
+    let max = arr[0];
+    for(let x in arr){
+        if(max<arr[x]){
+            max = arr[x];
+            index = x;
+        }
+    }document.write(arr + '<br>' + max + ' :La so lon nhat' + '<br>' + 'Tai gia tri: ' + index)
+
+</script>
+
+</body>
+</html>

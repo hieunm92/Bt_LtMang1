@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [] ;
+    let count = 0;
+    for(let i = 0; i < 10; i++){
+        let a = Math.floor(Math.random()*20);
+        arr.push(a);
+    }
+    for (let x in arr){
+        if(arr[x]>=10){
+            count++;
+        }
+
+    }document.write(arr+'<br>'+ count + ' :So lon hon hoac bang 10');
+</script>
+</body>
+</html>
